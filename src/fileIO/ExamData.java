@@ -25,6 +25,8 @@ public class ExamData {
 			problem = s.next();
 			problem = problem.replace('\n', ' ');
 			problem = problem.trim();
+			problem = problem.replace("\r", "-*nr-");
+			
 			
 			while(s.hasNext()) {
 				String temp = s.next();
@@ -86,6 +88,7 @@ public class ExamData {
 	}
 	
 	public String getPicturePath() {
+		if(picPath == null) return "null";
 		if(new File("./picture/" + picPath).exists())
 			return "./picture/" + picPath;
 		
