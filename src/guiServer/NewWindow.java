@@ -94,7 +94,7 @@ class mainPanel extends JFrame {
 		JLabel testName = new JLabel("시험 이름  : ");
 		testName.setHorizontalAlignment(JLabel.RIGHT);
 		testNameField = new JTextField(10);
-		testName.setPreferredSize(new Dimension(70, 20));
+		testName.setPreferredSize(new Dimension(90, 20));
 		namePanel.add(testName);
 		namePanel.add(testNameField);
 		
@@ -103,7 +103,7 @@ class mainPanel extends JFrame {
 		JLabel portLabel = new JLabel("Port  : ");
 		portInputField = new JTextField(10);
 		portLabel.setHorizontalAlignment(JLabel.RIGHT);
-		portLabel.setPreferredSize(new Dimension(70, 20));
+		portLabel.setPreferredSize(new Dimension(90, 20));
 		portPanel.add(portLabel);
 		portPanel.add(portInputField);
 		panel1.setPreferredSize(new Dimension(300, 40));
