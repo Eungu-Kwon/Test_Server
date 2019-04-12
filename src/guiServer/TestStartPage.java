@@ -130,6 +130,10 @@ class MakeServer extends Thread {
 			} catch (NumberFormatException e) {
 				// TODO: handle exception
 				System.err.println("Score load error");
+				student[3] = "연결 오류";
+				updateTableData(myNumber, student, 0);
+				out.close();
+				return;
 			}
 		}
 		
